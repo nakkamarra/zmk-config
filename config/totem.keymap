@@ -19,6 +19,7 @@
 #define Fun             3
 #define Game            4
 #define Gameplus        5
+#define Gameplusplus    6
 
 &mt {
     quick-tap-ms = <100>;
@@ -83,7 +84,7 @@
         };
 
         Fun {
-            display-name = "Fun";
+            display-name = "Func";
             bindings = <
         &bootloader    &trans  &trans  &trans  &trans    &trans  &kp F7  &kp F8  &kp F9  &kp F10
         &studio_unlock &trans  &trans  &trans  &trans    &trans  &kp F4  &kp F5  &kp F6   &kp F11
@@ -98,12 +99,22 @@
             &kp TAB         &kp Q  &kp W      &kp E         &sl R      &trans  &trans  &trans  &trans  &trans
             &kp LEFT_SHIFT  &kp A  &kp S      &kp D         &kp F      &trans  &trans  &trans  &trans  &trans
 &trans      &kp LCTRL       &kp Z  &kp X      &kp C         &kp V      &trans  &trans  &trans  &trans  &trans  &trans
-                                   &mo 5      &mo DOT       &kp SPACE  &to 0   &trans  &trans
+                                   &mo 5      &kp DOT       &kp SPACE  &to 0   &trans  &mo 6
             >;
         };
 
         Gaming+ {
             display-name = "Game+";
+            bindings = <
+        &kp ESCAPE  &kp NUMBER_1   &trans        &kp NUMBER_2  &kp T     &trans         &trans         &trans  &trans  &kp BSPC
+        &kp EQUAL   &trans         &trans        &trans        &kp G     &kp F5         &kp F7         &trans  &trans  &kp F12
+&trans  &kp MINUS   &trans         &trans        &kp INSERT    &kp B     &trans         &trans         &trans  &trans  &kp F22  &trans
+                                   &kp J         &trans        &trans    &trans         &trans         &trans
+            >;
+        };
+
+        Gaming++ {
+            display-name = "Game++";
             bindings = <
         &kp ESCAPE  &kp NUMBER_1   &trans        &kp NUMBER_2  &kp T     &trans         &trans         &trans  &trans  &kp BSPC
         &kp EQUAL   &trans         &trans        &trans        &kp G     &kp F5         &kp F7         &trans  &trans  &kp F12
