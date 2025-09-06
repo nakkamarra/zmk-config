@@ -107,8 +107,8 @@
             display-name = "Game+";
             bindings = <
         &kp ESCAPE  &kp NUMBER_1   &trans        &kp NUMBER_2  &kp T     &trans         &trans         &trans  &trans  &kp BSPC
-        &kp EQUAL   &trans         &trans        &trans        &kp G     &kp F5         &kp F7         &trans  &trans  &kp F12
-&trans  &kp MINUS   &trans         &trans        &kp INSERT    &kp B     &trans         &trans         &trans  &trans  &kp F22  &trans
+        &trans      &trans         &trans        &trans        &kp G     &kp F5         &kp F7         &trans  &trans  &kp F12
+&trans  &kp MINUS   &trans         &trans        &kp INSERT    &kp B     &kp F1         &kp F2         &kp F3  &kp F4  &kp F22  &trans
                                    &trans        &trans        &trans    &trans         &trans         &trans
             >;
         };
@@ -116,9 +116,9 @@
         Gaming++ {
             display-name = "Game++";
             bindings = <
-        &kp ESCAPE  &kp NUMBER_1   &trans        &kp NUMBER_2  &kp T     &trans         &trans         &trans  &trans  &kp BSPC
-        &kp EQUAL   &trans         &trans        &trans        &kp G     &kp F5         &kp F7         &trans  &trans  &kp F12
-&trans  &kp MINUS   &trans         &trans        &kp INSERT    &kp B     &trans         &trans         &trans  &trans  &kp F22  &trans
+        &kp ESCAPE  &kp NUMBER_1   &trans        &kp NUMBER_2  &kp T     &trans         &trans         &kp UP_ARROW  &trans     &trans
+        &kp EQUAL   &trans         &trans        &trans        &kp G     &trans         &kp LEFT       &kp DOWN      &kp RIGHT  &trans
+&trans  &kp MINUS   &trans         &trans        &kp INSERT    &kp B     &trans         &trans         &trans        &trans     &trans  &trans
                                    &trans        &trans        &trans    &trans         &trans         &trans
             >;
         };
